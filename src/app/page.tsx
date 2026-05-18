@@ -3043,22 +3043,22 @@ home b90f14f (Renamed swipe tab to home)
               </button>
             </div>
           </section>
-        ) : null}
+    
       </div>
 
-      {callState ? (
-        <CallOverlay
-          callState={callState}
-          callDurationSeconds={callDurationSeconds}
-          localVideoRef={localVideoRef}
-          remoteVideoRef={remoteVideoRef}
-          localStream={localCallStream}
-          remoteStream={remoteCallStream}
-          onAccept={() => void acceptCall()}
-          onReject={rejectCall}
-          onEnd={() => endCall(true)}
-        />
-      ) : null}
+  {callState ? (
+    <CallOverlay
+    callState={callState}
+    callDurationSeconds={callDurationSeconds}
+    localVideoRef={localVideoRef}
+    remoteVideoRef={remoteVideoRef}
+    localStream={localCallStream}
+    remoteStream={remoteCallStream}
+    onAccept={() => void acceptCall()}
+    onReject={rejectCall}
+    onEnd={() => endCall(true)}
+  />
+) : null}
 
       {!activeMatch && !hasExploreOverlay ? <nav className="fixed inset-x-0 bottom-0 z-[70] mx-auto flex max-w-md items-center justify-between rounded-t-[2rem] border border-white/10 bg-[#0b0d11]/96 px-4 py-3 text-xs text-white/65 shadow-[0_-18px_45px_rgba(0,0,0,0.45)] backdrop-blur">
         {[
