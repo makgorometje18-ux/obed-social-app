@@ -3044,8 +3044,6 @@ home b90f14f (Renamed swipe tab to home)
             </div>
           </section>
     
-      </div>
-
   {callState ? (
     <CallOverlay
     callState={callState}
